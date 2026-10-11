@@ -10,6 +10,6 @@ def ham(a):
         s = ''.join(str(x) for x in b)
         print (f' ошибка в бите: {badbit},исправленный вид: {s}, правильная информация: {info}')
     else: 
-        print('iliarchic pomidorchik')
+        print('all good')
 a = '0000011'
 ham(a)

@@ -8,8 +8,9 @@ def ham(a):
         b[badbit-1]^=1
         info = ''.join(str(b[i]) for i in (2,4,5,6))
         s = ''.join(str(x) for x in b)
-        print (f' ошибка в бите: {badbit},исправленный вид: {s}, правильная информация: {info}')
+        return (f' ошибка в бите: {badbit},исправленный вид: {s}, правильная информация: {info}')
     else: 
-        print('all good')
-a = '0000011'
-ham(a)
+        info = ''.join(str(b[i]) for i in (2,4,5,6))
+        return (f'Ошибок нет, правильная информация: {info}')
+a = '0100101'
+print(ham(a))
